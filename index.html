@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotoErica</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="bloco1">
+    <form id="formulario">
+        <fieldset>
+            <legend><b>LotoErica</b></legend>
+
+            <label for="nome">Nome:
+                <input
+                type="text"
+                placeholder="Informe o nome do cliente"
+                id="nome"
+                class="inputcaixa_entrada"
+                required
+                >
+            </label>
+
+            <button type="submit">Cadastrar</button>
+            
+            <input 
+            class="btn"
+            type="button"
+            id="btn_consultar"
+            onclick="listar()"
+            value="Consultar">
+            <br>
+
+            <input 
+            type="radio"
+            name="prefer"
+            id="id_prefer"
+            value="preferencial"
+            >Preferencial
+
+            <input 
+            type="radio"
+            name="prefer"
+            id="id_prefer"
+            value="normal"
+            >Comums
+            <br>
+
+            
+
+
+        </fieldset>
+
+    </form>  
+
+    <div>
+        <fieldset>
+            <legend><b>Fila de espera</b></legend>
+        
+            <p>Clique em "atender" para consultar o cliente </p>
+            <div id="resultado_espera"></div>
+    </div>
+    
+
+        
+    
+    </fieldset>
+        <input 
+        type="button"
+        id="btn_atender"
+        onclick="atender()"
+        value="Atender">         
+
+
+</div>   
+
+    <script src="array.js"> </script>
+</body>
+</html>
+
